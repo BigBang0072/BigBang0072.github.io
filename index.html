@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Abhinav Kumar</title>
+  
+  <meta name="author" content="Abhinav Kumar">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Abhinav Kumar</name>
+              </p>
+              <p>I am a Research Fellow at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/">Microsoft Research, India</a> (MSRI), where I am advised by <a href="http://www.amitsharma.in/">Dr. Amit Sharma</a>, <a href="https://chenhaot.com/">Dr. Chenhao Tan</a> and <a href="https://www.microsoft.com/en-us/research/people/amitdesh/">Dr. Amit Deshpande</a>.</p>
+              <p>
+                I graduated from <a href="https://www.bits-pilani.ac.in/">Birla Institute of Technology and Science (BITS), Pilani</a> in 2020 with  a Masters in Physics and Bachelors in Computer Science. For my Bachelors thesis, I worked with <a href="https://eecs.iisc.ac.in/people/partha-pratim-talukdar/">Dr. Partha Talukdar</a> on Domain Adaptation of pre-trained Word Embeddings. During my Masters thesis, I worked with <a href="https://sinhagaurav.github.io/">Dr. Gaurav Sinha</a> on disentangling a mixture distribution where components of mixture came from interventional distributions on base causal graph. It was then when I had my first introduction to the field of Causality and since then we have been good friends.
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:abhinavkumar.wk@gmail.com">Email</a> &nbsp/&nbsp
+                <a href="data/AbhinavKumar-CV.pdf">CV</a> &nbsp/&nbsp
+                <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp -->
+                <a href="https://scholar.google.com/citations?user=n0fNl3oAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://twitter.com/abhinav_kumar14">Twitter</a> &nbsp/&nbsp
+                <a href="https://github.com/BigBang0072/">Github</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/AbhinavKumar_circle.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/AbhinavKumar_circle.png" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <p>
+                I am interested in understanding failure modes of machine learning model and using these insights to build a more robust and generalizable model. So far, I have taken a causal perspective using tools from Causal Inference and Causal Discovery. I am also interested in looking into this problem from optimization and robust learning perspective.
+                <!-- Representative papers are <span class="highlight">highlighted</span>. -->
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="probing_stop()" onmouseover="probing_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='probing_image'>
+                  <img src='images/probing_after.jpg' width="160"></div>
+                <img src='images/probing_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function probing_start() {
+                  document.getElementById('probing_image').style.opacity = "1";
+                }
+
+                function probing_stop() {
+                  document.getElementById('probing_image').style.opacity = "0";
+                }
+                probing_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2207.04153">
+                <papertitle>Probing Classifiers are Unreliable for Concept Removal and Detection</papertitle>
+              </a>
+              <br>
+              <strong>Abhinav Kumar</strong>,
+              <a href="https://chenhaot.com/">Chenhao Tan</a>, 
+							<a href="http://www.amitsharma.in/">Amit Sharma</a>
+              <br><em>NeurIPS</em>, 2022
+              <br>
+              <a href="https://arxiv.org/abs/2207.04153">arXiv</a>
+              /
+              <a href="https://openreview.net/forum?id=MozmMHehWW8">ICML SCIS Workshop</a>
+              /
+              <a href="data/probing_icml_scis_poster.pdf">Poster</a>
+              <p></p>
+              <p>We show that latent space based concept detection and removal methods like Null-Space Removal (INLP) and adversarial removal, which internally uses probing classifiers,  are unreliable i.e. they fail to remove the desired concept and in the worst case remove or corrupt other feature or concept from latent space of the classifier.
+              </p>
+            </td>
+          </tr>
+
+
+
+          <tr onmouseout="mixture_stop()" onmouseover="mixture_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mixture_image'>
+                  <img src='images/mixture_after.jpg' width="160"></div>
+                <img src='images/mixture_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function mixture_start() {
+                  document.getElementById('mixture_image').style.opacity = "1";
+                }
+
+                function mixture_stop() {
+                  document.getElementById('mixture_image').style.opacity = "0";
+                }
+                mixture_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://proceedings.mlr.press/v161/kumar21a.html">
+                <papertitle>Disentangling mixtures of unknown causal interventions</papertitle>
+              </a>
+              <br>
+              <strong>Abhinav Kumar</strong>,
+              <a href="https://sinhagaurav.github.io/">Gaurav Sinha</a>
+              <br><em>UAI</em>, 2021
+              <br>
+              <a href="https://proceedings.mlr.press/v161/kumar21a.html">paper</a>
+              /
+              <a href="data/mixture_poster.pdf">Poster</a>
+              /
+              <a href="data/mixture_slides.pdf">Slides</a>
+              /
+              <a href="https://underline.io/lecture/28763-disentangling-mixtures-of-unknown-causal-interventions">Video</a>
+              <p></p>
+              <p>We study the problem of disentangling a mixture distribution generated  where components of mixture came from interventional distributions on base causal graph.
+              </p>
+            </td>
+          </tr>
+					
+          
+
+				
+       
+
+          
+					
+					
+        </tbody></table>
+        <footer>
+          <p align="right">Template: <a href="https://jonbarron.info/">Jon Barron</a></p>
+        </footer>
+      </td>
+    </tr>
+  </table>
+</body>
+
+
+
+</html>
