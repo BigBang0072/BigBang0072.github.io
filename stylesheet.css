@@ -105,27 +105,159 @@ name {
   font-size: 32px;
 }
 
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
+/* About tab — 1.2× font sizes */
+#tab-about p,
+#tab-about a,
+#tab-about td,
+#tab-about li {
+  font-size: 14.7px;
 }
 
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+#tab-about strong {
+  font-size: 14.7px;
 }
 
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+#tab-about heading {
+  font-size: 23.1px;
 }
+
+#tab-about name {
+  font-size: 33.6px;
+}
+
 
 span.highlight {
   background-color: #ffffd0;
+}
+
+/* Profile photo — fixed circular window (diameter = mean of all display dims) */
+.profile-circle {
+  display: block;
+  width: 261px;
+  height: 261px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+/* ── Timeline ── */
+.timeline {
+  position: relative;
+  padding: 10px 20px 20px 170px;
+}
+
+/*
+ * Tree image: fixed width, height:100% of timeline (which is sized by content).
+ * object-fit:cover scales so height always fills the container — the full tree
+ * tip-to-trunk is visible because the timeline is always taller than the tree's
+ * natural height at 85px wide (~151px), so only the empty white sides are cropped.
+ * Trunk stays pinned at 42px (50% of 85px) from left for any number of projects.
+ */
+.timeline-tree {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 85px;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  pointer-events: none;
+}
+
+/* year row — kept as a spacer only, no visible content */
+.timeline-year {
+  margin: 20px 0 4px;
+}
+
+/* paper entry card */
+.timeline-entry {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 16px;
+  background: #f7f7f7;
+  border: 1.5px solid #222;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+/* lychee fruit: sits between tree (0–85px) and card (170px+), vertically centred */
+.timeline-entry::before {
+  content: '';
+  position: absolute;
+  left: -75px;   /* tree right edge (85px) + 10px gap = 95px; 95 - 170 = -75px */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 64px;
+  height: 35px;  /* 64 / 1.83 ≈ 35px, preserving aspect ratio */
+  background: url('images/leeche_background_transparent.png') no-repeat center / contain;
+}
+
+.timeline-entry-image {
+  flex-shrink: 0;
+}
+
+.timeline-entry-details {
+  flex: 1;
+  padding-top: 2px;
+}
+
+.tab-nav {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 0 2px;
+  margin-bottom: 0;
+  border-bottom: 3px solid #444;
+  gap: 4px;
+}
+
+.tab-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #ebebeb;
+  border: 3px solid #bbb;
+  border-bottom: none;
+  border-radius: 7px 7px 0 0;
+  padding: 9px 24px;
+  cursor: pointer;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #888;
+  transition: background 0.15s, color 0.15s;
+}
+
+.tab-btn:hover {
+  color: #A31F34;
+  background: #f5f5f5;
+}
+
+.tab-btn.active {
+  position: relative;
+  background: #fff;
+  color: #A31F34;
+  font-weight: 700;
+  border-color: #444;
+  margin-bottom: -3px;
+  border-bottom: 3px solid #fff;
+  z-index: 1;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
 }

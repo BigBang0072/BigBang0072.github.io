@@ -8,147 +8,92 @@
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <script src="images/profile_pictures/manifest.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var pics = window.profilePictures;
+      if (!pics || !pics.length) return;
+      var path = 'images/profile_pictures/' + pics[Math.floor(Math.random() * pics.length)];
+      document.getElementById('profile-photo').src = path;
+      document.getElementById('profile-photo-link').href = path;
+    });
+  </script>
 </head>
 
 <body>
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
+        <nav class="tab-nav">
+          <button class="tab-btn active" onclick="showTab('about', this)">About</button>
+          <button class="tab-btn" onclick="showTab('publications', this)">Selected Publications</button>
+          <a class="tab-btn" href="data/AbhinavKumar-CV.pdf" target="_blank">Resume</a>
+        </nav>
+
+        <div id="tab-about" class="tab-panel active">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               <p style="text-align:center">
                 <name>Abhinav Kumar</name>
               </p>
-              <p>I am a Research Fellow at <a target="_blank" href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/">Microsoft Research, India</a> (MSRI), where I am advised by <a target="_blank" href="http://www.amitsharma.in/">Dr. Amit Sharma</a>. I am also working closely with <a target="_blank" href="https://chenhaot.com/">Dr. Chenhao Tan</a> and <a target="_blank" href="https://www.microsoft.com/en-us/research/people/amitdesh/">Dr. Amit Deshpande</a>.</p>
+              <p>I am a Ph.D. Candidate at <a target="_blank" href="https://www.mit.edu/">MIT</a> advised by <a target="_blank" href="https://www.carolineuhler.com/caroline-uhler">Prof. Caroline Uhler</a>. I broadly work on problems in Causality with applications in Biology.</p>
               <p>
-                I graduated from <a target="_blank" href="https://www.bits-pilani.ac.in/">Birla Institute of Technology and Science (BITS), Pilani</a> in 2020 with a Master's in Physics and Bachelor in Computer Science. For my Bachelor's thesis, I worked with <a target="_blank" href="https://eecs.iisc.ac.in/people/partha-pratim-talukdar/">Dr. Partha Talukdar</a> on Domain Adaptation of pre-trained Word Embeddings. During my Master's thesis, I worked with <a target="_blank" href="https://sinhagaurav.github.io/">Dr. Gaurav Sinha</a> on disentangling a mixture distribution where mixture components came from interventional distributions on a base causal graph. Then, I had my first introduction to the field of Causality, and ever since, we have been good friends. 
+                Before joining MIT, I was a Research Fellow at <a target="_blank" href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/">Microsoft Research, India</a> advised by <a target="_blank" href="http://www.amitsharma.in/">Dr. Amit Sharma</a>. I graduated from <a target="_blank" href="https://www.bits-pilani.ac.in/hyderabad/">BITS, Pilani (Hyderabad Campus)</a> in 2020 with a Master's in Physics and Bachelor's in Computer Science. During my Master's thesis, I worked with <a target="_blank" href="https://sinhagaurav.github.io/">Dr. Gaurav Sinha</a> who introduced me to the field of Causality, and ever since, we have been good friends.
               </p>
               <p style="text-align:center">
-                <a target="_blank" href="mailto:abhinavkumar.wk@gmail.com">Email</a> &nbsp/&nbsp
-                <a target="_blank" href="data/AbhinavKumar-CV.pdf">CV</a> &nbsp/&nbsp
-                <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp -->
+                <a target="_blank" href="mailto:akumar03@mit.edu">Email</a> &nbsp/&nbsp
                 <a target="_blank" href="https://scholar.google.com/citations?user=n0fNl3oAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
                 <a target="_blank" href="https://twitter.com/abhinav_kumar14">Twitter</a> &nbsp/&nbsp
                 <a target="_blank" href="https://github.com/BigBang0072/">Github</a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a target="_blank" href="images/AbhinavKumar_circle.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/AbhinavKumar_circle.png" class="hoverZoomLink"></a>
+              <a id="profile-photo-link" class="profile-circle" target="_blank" href="images/AbhinavKumar_circle.png"><img id="profile-photo" alt="profile photo" src="images/AbhinavKumar_circle.png"></a>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
+              <heading>Research Interests</heading>
               <p>
-                I am interested in understanding the failure modes of the Machine Learning model and using these insights to build a more robust and generalizable model. So far, I have looked at the problem from a causal perspective using tools from Causal Inference and Causal Discovery. I am also interested in looking into this problem from an optimization and robust learning perspective.
-                <!-- Representative papers are <span class="highlight">highlighted</span>. -->
+                I am broadly interested in the mechanisms underlying a complex system. These systems could be physical, such as biological systems, or algorithmic, such as ML models. I like to develop theoretical frameworks and methods to understand these systems and apply them to real-world applications. My current toolbox includes various hammers from Causality, such as Causal Discovery, Causal Representation Learning, and Causal Feature Learning.
               </p>
             </td>
           </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="probing_stop()" onmouseover="probing_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='probing_image'>
-                  <img src='images/probing_after.jpg' width="160"></div>
-                <img src='images/probing_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function probing_start() {
-                  document.getElementById('probing_image').style.opacity = "1";
-                }
-
-                function probing_stop() {
-                  document.getElementById('probing_image').style.opacity = "0";
-                }
-                probing_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a target="_blank" href="https://arxiv.org/abs/2207.04153">
-                <papertitle>Probing Classifiers are Unreliable for Concept Removal and Detection</papertitle>
-              </a>
-              <br>
-              <strong>Abhinav Kumar</strong>,
-              <a target="_blank" href="https://chenhaot.com/">Chenhao Tan</a>, 
-							<a target="_blank" href="http://www.amitsharma.in/">Amit Sharma</a>
-              <br><em>NeurIPS</em>, 2022
-              <br>
-              <a target="_blank" href="https://arxiv.org/abs/2207.04153">arXiv</a>
-              /
-              <a target="_blank" href="https://openreview.net/forum?id=nLGRGuzjtoR">NeurIPS Reviews</a>
-              /
-              <a target="_blank" href="https://openreview.net/forum?id=MozmMHehWW8">ICML SCIS Workshop</a>
-              /
-              <a target="_blank" href="data/probing_neurips_poster.pdf">Poster</a>
-              /
-              <a target="_blank" href="https://docs.google.com/presentation/d/1Fgz94j-Gi2ghtKHl8272-Kub5YXtiERs2lmnVHckTG4/edit?usp=sharing">Slides</a>
-              <p></p>
-              <p> We show that latent space based concept detection and removal methods like Null-Space Removal (INLP) and adversarial removal, which internally uses probing classifiers,  are unreliable. They fail to remove the desired concept and, in the worst case, remove or corrupt other features or concepts from the latent space of the classifier.
-              </p>
-            </td>
-          </tr>
-
-
-
-          <tr onmouseout="mixture_stop()" onmouseover="mixture_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='mixture_image'>
-                  <img src='images/mixture_after.jpg' width="160"></div>
-                <img src='images/mixture_before.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function mixture_start() {
-                  document.getElementById('mixture_image').style.opacity = "1";
-                }
-
-                function mixture_stop() {
-                  document.getElementById('mixture_image').style.opacity = "0";
-                }
-                mixture_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a target="_blank" href="https://proceedings.mlr.press/v161/kumar21a.html">
-                <papertitle>Disentangling mixtures of unknown causal interventions</papertitle>
-              </a>
-              <br>
-              <strong>Abhinav Kumar</strong>,
-              <a target="_blank" href="https://sinhagaurav.github.io/">Gaurav Sinha</a>
-              <br><em>UAI</em>, 2021
-              <br>
-              <a target="_blank" href="https://proceedings.mlr.press/v161/kumar21a.html">Conference Paper</a>
-              /
-              <a target="_blank" href="https://arxiv.org/pdf/2210.03242.pdf">arXiv</a>
-              /
-              <a target="_blank" href="data/mixture_poster.pdf">Poster</a>
-              /
-              <a target="_blank" href="data/mixture_slides.pdf">Slides</a>
-              /
-              <a target="_blank" href="https://underline.io/lecture/28763-disentangling-mixtures-of-unknown-causal-interventions">Video</a>
-              <p></p>
-              <p>We study the problem of disentangling a mixture distribution, where components of the mixture came from interventional distributions on a base causal graph.
-              </p>
-            </td>
-          </tr>
-					
-          
-
-				
-       
-
-          
-					
-					
         </tbody></table>
         <footer>
           <p align="right">Template: <a target="_blank" href="https://jonbarron.info/">Jon Barron</a></p>
         </footer>
+        </div><!-- /tab-about -->
+
+        <div id="tab-publications" class="tab-panel">
+        <div class="timeline">
+          <img src="images/pine-tree-element-graphic-plain-background.png" class="timeline-tree" alt="">
+          <div class="timeline-year"></div>
+          <div id="project-mixture-and-graph"></div>
+          <div class="timeline-year"></div>
+          <div id="project-cer"></div>
+          <div class="timeline-year"></div>
+          <div id="project-probing"></div>
+          <div class="timeline-year"></div>
+          <div id="project-mixture"></div>
+        </div>
+
+        <script type="text/javascript">
+          function showTab(name, btn) {
+            document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+            document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+            document.getElementById('tab-' + name).classList.add('active');
+            btn.classList.add('active');
+          }
+        </script>
+        <script src="projects/mixture_and_graph/description.js"></script>
+        <script src="projects/cer/description.js"></script>
+        <script src="projects/probing/description.js"></script>
+        <script src="projects/mixture/description.js"></script>
+        </div><!-- /tab-publications -->
       </td>
     </tr>
   </table>
