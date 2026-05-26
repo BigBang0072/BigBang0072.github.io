@@ -204,6 +204,13 @@ span.highlight {
 
 .timeline-entry-image {
   flex-shrink: 0;
+  width: 160px;
+}
+
+.timeline-entry-image img {
+  width: 160px;
+  height: auto;
+  display: block;
 }
 
 .timeline-entry-details {
