@@ -16,12 +16,19 @@
       document.getElementById('tab-' + name).classList.add('active');
       btn.classList.add('active');
     }
+    var profileQuotes = [
+      '"The effort to understand the universe is one of the very few things that lifts human life a little above the level of farce, and gives it some of the grace of tragedy." &mdash; Steven Weinberg',
+      'कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।<br>मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥ २-४७'
+    ];
     document.addEventListener('DOMContentLoaded', function() {
       var pics = window.profilePictures;
-      if (!pics || !pics.length) return;
-      var path = 'images/profile_pictures/' + pics[Math.floor(Math.random() * pics.length)];
-      document.getElementById('profile-photo').src = path;
-      document.getElementById('profile-photo-link').href = path;
+      if (pics && pics.length) {
+        var path = 'images/profile_pictures/' + pics[Math.floor(Math.random() * pics.length)];
+        document.getElementById('profile-photo').src = path;
+        document.getElementById('profile-photo-link').href = path;
+      }
+      document.getElementById('profile-quote').innerHTML =
+        profileQuotes[Math.floor(Math.random() * profileQuotes.length)];
     });
   </script>
 </head>
@@ -56,6 +63,7 @@
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
               <a id="profile-photo-link" class="profile-circle" target="_blank" href="images/AbhinavKumar_circle.png"><img id="profile-photo" alt="profile photo" src="images/AbhinavKumar_circle.png"></a>
+              <p id="profile-quote" class="profile-quote"></p>
             </td>
           </tr>
         </tbody></table>

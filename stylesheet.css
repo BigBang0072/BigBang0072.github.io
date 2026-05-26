@@ -148,6 +148,17 @@ span.highlight {
   display: block;
 }
 
+.profile-quote {
+  width: 261px;
+  margin: 10px auto 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 12.5px;
+  line-height: 1.6;
+  text-align: center;
+  color: #555;
+}
+
 /* ── Timeline ── */
 .timeline {
   position: relative;
