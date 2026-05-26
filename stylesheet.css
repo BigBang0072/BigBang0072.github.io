@@ -162,7 +162,7 @@ span.highlight {
 /* ── Timeline ── */
 .timeline {
   position: relative;
-  padding: 10px 20px 20px 170px;
+  padding: 10px 20px 20px 100px;
 }
 
 /*
@@ -201,17 +201,6 @@ span.highlight {
   margin-bottom: 8px;
 }
 
-/* lychee fruit: sits between tree (0–85px) and card (170px+), vertically centred */
-.timeline-entry::before {
-  content: '';
-  position: absolute;
-  left: -75px;   /* tree right edge (85px) + 10px gap = 95px; 95 - 170 = -75px */
-  top: 50%;
-  transform: translateY(-50%);
-  width: 64px;
-  height: 35px;  /* 64 / 1.83 ≈ 35px, preserving aspect ratio */
-  background: url('images/leeche_background_transparent.png') no-repeat center / contain;
-}
 
 .timeline-entry-image {
   flex-shrink: 0;
