@@ -10,7 +10,7 @@ document.getElementById('project-mixture').innerHTML = `
     <br>
     <strong>Abhinav Kumar</strong>,
     <a target="_blank" href="https://sinhagaurav.github.io/">Gaurav Sinha</a>
-    <br><em>UAI</em>, 2021
+    <br><span class="venue-badge">UAI 2021</span>
     <br>
     <a target="_blank" href="https://proceedings.mlr.press/v161/kumar21a.html">Conference Version</a>
     /

@@ -2,12 +2,15 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <title>Abhinav Kumar</title>
-  
+
   <meta name="author" content="Abhinav Kumar">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
   <script src="images/profile_pictures/manifest.js"></script>
   <script>
     function showTab(name, btn) {
@@ -33,76 +36,72 @@
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <nav class="tab-nav">
-          <button class="tab-btn active" onclick="showTab('about', this)">About</button>
-          <button class="tab-btn" onclick="showTab('publications', this)">Selected Publications</button>
-          <a class="tab-btn" href="data/AbhinavKumar-CV.pdf" target="_blank">Resume</a>
-        </nav>
+  <div class="page-container">
 
-        <div id="tab-about" class="tab-panel active">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Abhinav Kumar</name>
-              </p>
-              <p>I am a Ph.D. Candidate at <a target="_blank" href="https://www.mit.edu/">MIT</a> advised by <a target="_blank" href="https://www.carolineuhler.com/caroline-uhler">Prof. Caroline Uhler</a>. I broadly work on problems in Causality with applications in Biology.</p>
-              <p>
-                Before joining MIT, I was a Research Fellow at <a target="_blank" href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/">Microsoft Research, India</a> advised by <a target="_blank" href="http://www.amitsharma.in/">Dr. Amit Sharma</a>. I graduated from <a target="_blank" href="https://www.bits-pilani.ac.in/hyderabad/">BITS, Pilani (Hyderabad Campus)</a> in 2020 with a Master's in Physics and Bachelor's in Computer Science. During my Master's thesis, I worked with <a target="_blank" href="https://sinhagaurav.github.io/">Dr. Gaurav Sinha</a> who introduced me to the field of Causality, and ever since, we have been good friends.
-              </p>
-              <p style="text-align:center">
-                <a target="_blank" href="mailto:akumar03@mit.edu">Email</a> &nbsp/&nbsp
-                <a target="_blank" href="https://scholar.google.com/citations?user=n0fNl3oAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-                <a target="_blank" href="https://twitter.com/abhinav_kumar14">Twitter</a> &nbsp/&nbsp
-                <a target="_blank" href="https://github.com/BigBang0072/">Github</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a id="profile-photo-link" class="profile-circle" target="_blank" href="images/AbhinavKumar_circle.png"><img id="profile-photo" alt="profile photo" src="images/AbhinavKumar_circle.png"></a>
-              <p id="profile-quote" class="profile-quote"></p>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research Interests</heading>
-              <p>
-                I am broadly interested in the discovering the mechanisms underlying a complex system. These systems could be physical, such as biological systems, or algorithmic, such as ML models. I like to develop theoretical frameworks and methods to understand these systems and apply them to real-world applications. My current toolbox includes various hammers from Causality, such as Causal Discovery, Causal Representation Learning, and Causal Feature Learning.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-        <footer>
-          <p align="right">Template: <a target="_blank" href="https://jonbarron.info/">Jon Barron</a></p>
-        </footer>
-        </div><!-- /tab-about -->
+    <nav class="tab-nav">
+      <button class="tab-btn active" onclick="showTab('about', this)">About</button>
+      <button class="tab-btn" onclick="showTab('publications', this)">Selected Publications</button>
+      <a class="tab-btn" href="data/AbhinavKumar-CV.pdf" target="_blank">Resume</a>
+    </nav>
 
-        <div id="tab-publications" class="tab-panel">
-        <div class="timeline">
-          <div class="timeline-year"></div>
-          <div id="project-mixture-and-graph"></div>
-          <div class="timeline-year"></div>
-          <div id="project-cer"></div>
-          <div class="timeline-year"></div>
-          <div id="project-probing"></div>
-          <div class="timeline-year"></div>
-          <div id="project-mixture"></div>
+    <div id="tab-about" class="tab-panel active">
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p style="text-align:center">
+            <name>Abhinav Kumar</name>
+          </p>
+          <p>I am a fourth year Ph.D. Candidate at <a target="_blank" href="https://www.mit.edu/">MIT</a> advised by <a target="_blank" href="https://www.carolineuhler.com/caroline-uhler">Prof. Caroline Uhler</a>. I broadly work on problems in Causality with applications in Biology.</p>
+          <p>
+            Before joining MIT, I was a Research Fellow at <a target="_blank" href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/">Microsoft Research, India</a> advised by <a target="_blank" href="http://www.amitsharma.in/">Dr. Amit Sharma</a>. I graduated from <a target="_blank" href="https://www.bits-pilani.ac.in/hyderabad/">BITS, Pilani (Hyderabad Campus)</a> in 2020 with a Master's in Physics and Bachelor's in Computer Science. During my Master's thesis, I worked with <a target="_blank" href="https://sinhagaurav.github.io/">Dr. Gaurav Sinha</a> who introduced me to the field of Causality, and ever since, we have been good friends.
+          </p>
+          <p style="text-align:center">
+            <a target="_blank" href="mailto:akumar03@mit.edu">Email</a> &nbsp/&nbsp
+            <a target="_blank" href="https://scholar.google.com/citations?user=n0fNl3oAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+            <a target="_blank" href="https://twitter.com/abhinav_kumar14">Twitter</a> &nbsp/&nbsp
+            <a target="_blank" href="https://github.com/BigBang0072/">Github</a>
+          </p>
         </div>
+        <div class="about-photo">
+          <a id="profile-photo-link" class="profile-circle" target="_blank" href="images/AbhinavKumar_circle.png">
+            <img id="profile-photo" alt="profile photo" src="images/AbhinavKumar_circle.png">
+          </a>
+          <p id="profile-quote" class="profile-quote"></p>
+        </div>
+      </div>
 
-        <script src="projects/mixture_and_graph/description.js"></script>
-        <script src="projects/cer/description.js"></script>
-        <script src="projects/probing/description.js"></script>
-        <script src="projects/mixture/description.js"></script>
-        </div><!-- /tab-publications -->
-      </td>
-    </tr>
-  </table>
+      <div class="section">
+        <heading>Research Interests</heading>
+        <p>
+          I am broadly interested in the discovering the mechanisms underlying a complex system. These systems could be physical, such as biological systems, or algorithmic, such as ML models. I like to develop theoretical frameworks and methods to understand these systems and apply them to real-world applications. My current toolbox includes various hammers from Causality, such as Causal Discovery, Causal Representation Learning, and Causal Feature Learning.
+        </p>
+      </div>
+
+      <footer>
+        <p align="right">Template: <a target="_blank" href="https://jonbarron.info/">Jon Barron</a></p>
+      </footer>
+
+    </div><!-- /tab-about -->
+
+    <div id="tab-publications" class="tab-panel">
+      <div class="timeline">
+        <div class="timeline-year">2024</div>
+        <div id="project-mixture-and-graph"></div>
+        <div class="timeline-year">2023</div>
+        <div id="project-cer"></div>
+        <div class="timeline-year">2022</div>
+        <div id="project-probing"></div>
+        <div class="timeline-year">2021</div>
+        <div id="project-mixture"></div>
+      </div>
+
+      <script src="projects/mixture_and_graph/description.js"></script>
+      <script src="projects/cer/description.js"></script>
+      <script src="projects/probing/description.js"></script>
+      <script src="projects/mixture/description.js"></script>
+    </div><!-- /tab-publications -->
+
+  </div>
 </body>
-
-
 
 </html>

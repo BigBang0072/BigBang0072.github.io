@@ -11,7 +11,7 @@ document.getElementById('project-cer').innerHTML = `
     <strong>Abhinav Kumar</strong>,
     <a target="_blank" href="https://www.microsoft.com/en-us/research/people/amitdesh/">Amit Deshpande</a>,
     <a target="_blank" href="http://www.amitsharma.in/">Amit Sharma</a>
-    <br><em>NeurIPS</em>, 2023
+    <br><span class="venue-badge">NeurIPS 2023</span>
     <br>
     <a target="_blank" href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/42770daf4a3384b712ea9c36e9279998-Abstract-Conference.html">Conference Version</a>
     /

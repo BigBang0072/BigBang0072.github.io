@@ -11,7 +11,7 @@ document.getElementById('project-mixture-and-graph').innerHTML = `
     <strong>Abhinav Kumar</strong>,
     <a target="_blank" href="https://sites.google.com/view/kiran-shiragur">Kirankumar Shiragur</a>,
     <a target="_blank" href="https://www.carolineuhler.com/caroline-uhler">Caroline Uhler</a>
-    <br><em>NeurIPS</em>, 2024
+    <br><span class="venue-badge">NeurIPS 2024</span>
     <br>
     <a target="_blank" href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/1dcee1cd6890ab7fcdf173ec10526da9-Abstract-Conference.html">Conference Version</a>
     /

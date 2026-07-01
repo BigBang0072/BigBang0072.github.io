@@ -11,7 +11,7 @@ document.getElementById('project-probing').innerHTML = `
     <strong>Abhinav Kumar</strong>,
     <a target="_blank" href="https://chenhaot.com/">Chenhao Tan</a>,
     <a target="_blank" href="http://www.amitsharma.in/">Amit Sharma</a>
-    <br><em>NeurIPS</em>, 2022
+    <br><span class="venue-badge">NeurIPS 2022</span>
     <br>
     <a target="_blank" href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/725f5e8036cc08adeba4a7c3bcbc6f2c-Abstract-Conference.html">Conference Version</a>
     /
